@@ -8,6 +8,7 @@ build: off
 
 install:
 
+  - chmod +x ./artifacts/app-card-delivery.jar
   - ps: $App = Start-Process -FilePath java -ArgumentList "-jar ./artifacts/app-card-delivery.jar -port=9000" -PassThru
   - chmod +x gradlew
 
