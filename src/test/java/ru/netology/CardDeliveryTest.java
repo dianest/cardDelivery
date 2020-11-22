@@ -29,7 +29,7 @@ public class CardDeliveryTest {
 
     @Test
     public void happyPath() {
-        open("http://localhost:9999/");
+        open("http://localhost:9000/");
         SelenideElement form = $(By.tagName("FORM"));
         form.$("[data-test-id=city] input").setValue("Санкт-Петербург");
         for(int i = 0; i < 10; i++) {
